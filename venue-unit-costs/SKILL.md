@@ -40,6 +40,23 @@ On the Factory Town file the gap between budget and actual was routinely large: 
 
 Container bars are the clearest case. The container itself is $16,875 for a 20 ft warehouse unit, but the openings cut into it, the roll-up door, plumbing roughing, power and the bar equipment are all separate lines. A "container bar" priced at the container is priced at perhaps a third of what it costs to serve a drink from. The same trap applies to decking (fabrication, heavy equipment, crane and labour are four vendors), and to stage structure (structure, video support, FOH platform, towers, footings, labour, crane).
 
+## Extrapolating a lump to a different size
+
+Most useful benchmark lines are lumps with no area behind them, and the room you are pricing is a different size. Converting one to the other is the commonest thing this skill is asked to do, and it is where the biggest errors get made.
+
+**First, get the source dimension.** A lump without a dimension cannot be extrapolated — it can only be used as a whole-item comparable for a similar-sized item. Chase the dimension from the drawing, the fabrication quote or the vendor before scaling anything. If it cannot be found, say so and price the line another way rather than inventing a denominator.
+
+**Then choose the right scaling law.** Cost rarely scales linearly with area:
+
+- **Flat area work** — decking, platforms, membrane, flooring, paint — scales close to **linearly with area**. A deck twice the size costs roughly twice as much.
+- **Structure carrying load over a span** scales **faster than area**, because member depth grows with span. Doubling a span more than doubles the steel.
+- **Perimeter items** — railing, edge detail, barricade, facade — scale with **perimeter, not area**. Doubling an area multiplies perimeter by about 1.4, so a naive area scale overstates them badly.
+- **Fixed costs inside the lump** — mobilisation, engineering, shop drawings, crane, delivery — do **not scale at all**. Strip them out before applying a rate, then add them back once.
+
+So the honest form is: `cost = fixed + (area rate x area) + (perimeter rate x perimeter)`, not `old cost x (new area / old area)`.
+
+**State the confidence loss.** An extrapolated rate is weaker evidence than the actual it came from. Label it as derived, name the source line, the source dimension and the scaling law used. A derived number that cannot be traced back to its actual is not a benchmark.
+
 ## Building the library
 
 Every project should add to it. Mine invoice trackers rather than budget summaries — the vendor, the paid amount and the description together are what make a rate reusable. Record the quantity even when the file does not compute a rate, because a later takeoff can. Keep the source and the date on every row; rates age, and an undated rate is a guess with a decimal point.

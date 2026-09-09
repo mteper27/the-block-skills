@@ -47,3 +47,11 @@ Soft costs,Architect,,lot,981740,,,FT Phase 2 detail,forecast,"CER 250000, forec
 Soft costs,Structural engineer,,lot,44000,,YHCE,FT Capex Original,forecast,"Budget 25000."
 Soft costs,Electrical engineer master plan,,lot,32000,,HMB,FT Phase 2 detail,quote,"Plus 12000 dry-utility infrastructure consulting."
 Soft costs,Creative production designer,,lot,195000,,,FT Capex Original,forecast,"Budget 100000. 250k fee plus travel per the note."
+Structure,Aux stage 42ft x 28ft x 28ft plus portal 30ft x 4ft x 23ft,1176,sf footprint,,,Mountain Production,FT Phase 1 detail,actual,"Dimensions stated, cost not isolated on the line. Footprint 42x28=1176 SF. The only stage in the file with dimensions given."
+Bars,40ft shipping container bar,1,each,,,ARCA,FT Phase 2 detail,actual,"Larger than the 20ft warehouse units. Includes an additional window for the Park Stage container."
+Bars,20ft artist lounge container (high cube),1,each,,,ARCA,FT Phase 2 detail,actual,
+Bars,20ft warehouse FOH container,1,each,,,ARCA,FT Phase 2 detail,actual,
+Structure,Temporary panels 8ft x 10ft,65,each,,,ARCA,FT Phase 1 detail,actual,"5200 SF of temporary panel. Cost not isolated."
+Structure,Aluminium frames 8ft x 8ft (2in x 2in x 1/8in),,each,,,ARCA,FT GL P09-10,actual,"Final payment line. Qty not stated."
+Structure,Chain Room 40ft spanner beams and column removal,,lot,,,,FT Phase 1 detail,actual,"Column removal to open a span - relevant to any warehouse conversion."
+Structure,PT boards 8ft x 6ft staggered,5,each,,,,FT Phase 1 detail,actual,
