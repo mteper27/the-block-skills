@@ -1,33 +1,40 @@
 ---
 name: stage-build-estimating
-description: Price a stage and its production package from a test fit — take off the quantities the drawing actually supports, apply a delivered unit-rate card (structure and foundations, deck, lighting per fixture, LED per SF, barricade per LF with corners and freight, fence per LF, containers each, engineering and design as ratios), then cross-check the result per capacity before sending it. Rates are delivered actuals from a five-stage festival venue build, carried as portable rates with their basis and their limits stated. Use when handed a test fit, a plan or a set of dimensions and asked what a stage costs, and when checking a stage quote against something independent.
+description: Price a stage and its production package from a test fit — take off the quantities the drawing supports, price each from the best evidence available (a quote first, a delivered unit rate second, a ratio third, a capacity band only as a last resort), and cross-check before sending. Carries delivered rates for lighting per fixture, barricade per LF with corners and freight, fence per panel, containers each, and the soft costs that ride every stage — each with its basis, its range and its limits stated. Use when handed a test fit, a plan or a set of dimensions and asked what a stage costs, and when checking a stage quote against something independent.
 ---
 
 # Stage Build Estimating
 
-Someone hands you a test fit and asks what it costs. The answer is a takeoff, not an opinion — **measure what the drawing supports, price each quantity at a rate with a basis, and cross-check the total against a unit that travels.** Anything you cannot measure gets a band and a label, never a confident number.
+Someone hands you a test fit and asks what it costs. The answer is a takeoff, not an opinion — **measure what the drawing supports, price each quantity from the best evidence you have, and cross-check the total before it leaves the building.**
 
-Everything below is a rate card and a procedure. The rates are delivered costs from real builds; they are a starting basis for a new project, not a quote for it. Three competing quotes still settle every package — see `construction-pricing-and-bids` for how to get them and how to level them.
+## The evidence hierarchy — read this before using any rate below
+
+1. **A quote for this scope.** A fabricator's price for the stage in front of you.
+2. **A delivered unit rate with a real count behind it** — this fixture, this foot, this container.
+3. **A ratio** riding a number you already trust.
+4. **A capacity band**, only when there are no dimensions at all.
+
+**Never use a lower tier when a higher one exists.** A capacity band is a scoping device for the period before anyone has drawn anything. The moment you have dimensions — and certainly the moment you have a quote — the band is not a candidate, it is a *check*, and a weak one.
+
+This rule exists because it was broken. Pricing a 60' × 40' black steel stage, the capacity band returned **$2,369,220** against a fabricator's quote of **$1,000,000** — 2.37x, and it dragged the engineering, design and foundation lines up with it because they all ride the structure. **A quote existed and a proxy was used anyway.** That is the single most expensive mistake available in this process.
 
 ## Take these quantities off the test fit
 
-Nothing gets priced without one of these. If the drawing does not support a measurement, say so and carry an allowance.
+Nothing gets priced without one of these. If the drawing does not support a measurement, carry an allowance and label it.
 
-- **Stage deck** — width × depth → SF. Also trim height, and clear height to underside of roof.
-- **Roof** — covered area, and the question that dominates the whole estimate: **does it cover the stage only, or the audience too?** Crowd cover is a different structure, a different load path and a different permit.
-- **Rigging** — is production hung from the roof or ground-supported? Ground-supported takes the rigging load out of the roof entirely and is the largest single saving available on a stage.
-- **Foundations** — footing count and locations if drawn; if not, take them as a ratio (below) and flag them as the biggest unknown on the sheet.
-- **Barricade** — LF of stage front, pit returns, gates and any secondary run. **Count corners separately**; they are not in the per-foot rate.
-- **LED** — each wall's width × height → SF. Note ground-stacked vs flown; flown needs support steel that belongs to the stage fabricator, not the LED vendor.
-- **Lighting** — fixture count by type off the lighting plan. No plan yet → use the per-capacity band and label it.
-- **Fence and walls** — LF by finish level (temporary panel vs feature wall).
-- **Containers and bars** — count by size (20' / 40') and by fit-out (bar, FOH, lounge, storage).
-- **Capacity** — the cross-check denominator. Get it from the egress and occupancy calculation, not from the promoter.
-- **Access** — crane position, hoisting route, and whether the structure can be built in the open or has to go into an existing building. This is scope, not a rate, and it is where transferred numbers break.
+- **Stage deck** — width × depth → SF; trim height; clear height to underside of roof.
+- **Roof** — covered area, and the question that changes everything: **does it cover the stage only, or the audience too?** Crowd cover is a different structure, load path and permit.
+- **Rigging** — hung from the roof or ground-supported? Ground-supported takes rigging load out of the roof and is the largest single saving on a stage.
+- **Foundations** — footing count, depth and locations if drawn. If not drawn, this is the widest number on the sheet.
+- **Barricade** — LF of stage front, pit returns, gates, secondary runs. **Count corners separately.**
+- **LED** — each wall's width × height → SF; ground-stacked or flown. Flown needs support steel from the stage fabricator, not the LED vendor.
+- **Lighting** — fixture count by type off the lighting plan.
+- **Fence and walls** — LF by finish level.
+- **Containers and bars** — count by size (20' / 40') and fit-out.
+- **Capacity** — from the egress and occupancy calculation, not from the promoter. Used for cross-checking only.
+- **Access** — crane position, hoisting route, and whether the structure goes up in the open or into an existing building. Scope, not a rate, and where transferred numbers break.
 
-## The rate card
-
-**Tier 1 — countable rates.** Quantity × rate, each drawn from a delivered invoice with a real count behind it.
+## Rates with a real count behind them
 
 | Item | Rate | Basis |
 | --- | ---: | --- |
@@ -35,7 +42,6 @@ Nothing gets priced without one of these. If the drawing does not support a meas
 | Crash barricade, delivered | **$227.64 / LF** | freight adds 13.4% |
 | Effects fixture, large format | **$2,471 / fixture** | 48-unit order |
 | Effects fixture, site / architectural | **$642 / fixture** | 50-unit order |
-| LED wall | **$1,400 / SF** | estimator's rate, not a delivered buy — Tier C |
 | Temporary fence panel, 8' × 10' | **$182 / panel** = $23 / LF | 65 panels |
 | Feature wall, 8' × 8' framed panel | **$936 / panel** = $117 / LF | 40 panels, fab + install |
 | 20' container, bar fit-out | **$16,875** | 3-unit order |
@@ -44,104 +50,100 @@ Nothing gets priced without one of these. If the drawing does not support a meas
 | 40' container bar | $68,097 | incl. added window |
 | 40' custom FOH container incl. AC | $50,290 | |
 | Retrofit existing container to service bar | $20,000 | |
-| Aux stage deck + portal | **$66 / SF** | 1,176 SF aux stage — does not scale to a main stage |
-| Private provider plan review + inspections | **$13,500 / stage** | $7,500 + $6,000 |
-| Expediting, per permit | $1,500 | |
+| Aux stage deck + portal | **$66 / SF** | 1,176 SF aux stage only |
 | Bar millwork | ~$900 / LF | plus $40–75K per bar of plumbing and electrical roughing |
 
-**Tier 2 — ratios that ride another number.** Use these to build the lines nobody quotes separately.
+**LED has no delivered $/SF in this card.** The one rate available — $1,400/SF — is an estimator's note with no wall dimensions behind it and no invoice to check it against. Carry LED as an **allowance** and quote it against the wall dimensions. Do not let a $/SF rate you cannot source drive a six-figure line.
+
+## Ratios, and where they stop working
 
 | Ratio | Value | Rides on |
 | --- | ---: | --- |
-| Foundations and footings | **25%** | delivered structure package |
-| Erection labour + crane | **5%** | structure |
-| Structural engineering | **0.67 – 1.50%** | structure |
-| Production / stage design | **3.15%** | structure |
-| Architect of record | **~1.0%** | whole programme |
+| Foundations and footings | **12 – 36%** | fabricated steel |
+| Erection labour + crane | ~5% | structure |
 | Barricade corners | **19%** | barricade package |
 | Barricade freight | **13.4%** | barricade equipment |
 | Lighting install, single room | **16.7%** | fixture purchase |
 | Lighting install, distributed across a site | **54%** (67% with electrical) | fixture purchase |
 
-Engineering doubles between the low and high end because the difference is how much of the structure the engineer had to originate, not a rate difference. Price it against how defined the structure is.
+**Foundations are a range, not a rate.** Two stages on the same site came in at 11.6% and 35.9% of fabricated steel — a three-fold spread driven by soil, depth and roof duty. On a $1M steel quote that is $116K to $359K. Carry the range until someone drills.
 
-**Tier 3 — capacity bands, for use before drawings exist.**
+**Percentages have absolute floors.** Structural engineering delivered at $22,060 and $31,920 on two stages — 0.67% of one and 1.50% of the other. Applying 1.5% to a $1M stage returns $15,000, which is below both fees actually paid. Below roughly $2M of structure, carry engineering, plan review, expediting and design as **absolute amounts**, not percentages:
 
-| Component | Band | Points |
-| --- | ---: | --- |
-| Stage structure incl. foundations, roof over crowd | **$388 / cap** | 8,500 cap |
-| Stage structure incl. foundations, roof over stage only | **$395 / cap** | 6,000 cap |
-| Stage deck & VIP platforms | **$21 – 22 / cap** | two rooms |
-| Lighting & video, outdoor stage | $44 – 73 / cap | two stages |
-| Lighting & video, indoor room | $172 – 253 / cap | two rooms |
-| Sound, indoor room | $204 / cap | one delivered package |
+| | |
+| --- | --- |
+| Structural engineering | $22 – 32K per stage |
+| Private provider plan review + inspections | $13,500 per stage |
+| Expediting, per permit | $1,500 |
+| Architect of record | ~1.0% of programme |
 
-Two things worth reading twice. **Structure per capacity barely moved between a crowd-covering roof and a stage-only roof** — $388 against $395 — so capacity, not roof duty, is what predicts structure cost at this scale, even though roof duty dominates the engineering. And **small rooms cost more per head, not less**: fixture counts, consoles, distro and structural minimums do not scale down.
+## Capacity bands — what they actually measured
 
-## The tiers do not add
+Use only with no dimensions, and know what you are invoking. These came from two **festival mainstage canopies**: one a $1.53M space frame plus $520K of further stage work, the other a roof spanning the audience with $827K of footings under it. They are not a rate for a stage structure. They answer one narrow question — *what did a mainstage for a crowd of this size cost, all in.*
 
-A Tier 3 band already contains the things you would count in Tier 1. Use the band **or** the build-up, never both in one total — and use whichever you did not use as the cross-check. Adding a capacity band to a counted fixture schedule double-counts the entire lighting package.
+| Component | Band |
+| --- | ---: |
+| Mainstage structure incl. foundations, roof over crowd | $388 / cap |
+| Mainstage structure incl. foundations, roof over stage only | $395 / cap |
+| Stage deck & VIP platforms | $21 – 22 / cap |
+| Lighting & video, outdoor stage | $44 – 73 / cap |
+| Lighting & video, indoor room | $172 – 253 / cap |
+| Sound, indoor room | $204 / cap |
+
+Two readings worth keeping. Structure per capacity barely moved between a crowd roof and a stage-only roof, so at mainstage scale capacity predicts cost better than roof duty does — even though roof duty dominates the engineering. And **small rooms cost more per head**: fixture counts, consoles and structural minimums do not scale down.
+
+**A band and a build-up never appear in the same total.** Use one; the other is your cross-check.
 
 ## The calculation, in order
 
-1. **Classify the stage** — indoor or outdoor, roof over stage or over crowd, ground-supported or hung, permanent or seasonal. This decides which rates apply before any arithmetic.
-2. **Structure and foundations first**, because it is the number that breaks. Build it up if the drawings support it; otherwise take the capacity band. Split out footings at 25% and mark them as the estimate's largest single risk — the one delivered footing contract in this card took a **34% change order**.
-3. **Deck, platforms and stage-level scenic** at the deck band or by SF.
-4. **Production packages by count** — fixtures, LED SF, then add install as a ratio of purchase. Add the support steel for anything flown, priced by the fabricator.
-5. **Site and guest infrastructure by measurement** — barricade LF plus corners plus freight, fence LF, containers each.
-6. **Soft costs as ratios** of the numbers now on the sheet: structural engineering, design, plan review and inspections, expediting.
-7. **Name what is excluded.** Sound, power, SFX, HVAC and permanent utilities are the lines most often left at placeholder value. Write the exclusion on the face of the estimate.
-8. **State the estimate class and band.** A test fit is Class 4 or 5 work — roughly −15/−30% to +20/+50% at best. Do not carry it to the dollar.
+1. **Classify the stage** — indoor or outdoor, roof over stage or crowd, ground-supported or hung, permanent or seasonal.
+2. **Get the structure priced by someone who builds them.** This is the number that dominates and the number that breaks. If a quote exists, it is the number — and your job becomes leveling it, not deriving it: what is in it, what is out, does it include deck, roof, towers, erection, freight, engineering, and to what code.
+3. **Foundations separately, as a range.** Fabricator quotes routinely exclude them. The one delivered footing contract in this card took a **34% change order**.
+4. **Erection and crane** — confirm in or out of the fabricator's scope before adding.
+5. **Production packages by count** — fixtures, then install as a ratio of purchase. LED as an allowance until quoted. Support steel for anything flown belongs to the fabricator's line.
+6. **Site and guest infrastructure by measurement** — barricade LF plus corners plus freight, fence LF, containers each.
+7. **Soft costs as absolutes** at this scale, not percentages.
+8. **Name what is excluded.** Sound, power, SFX, HVAC and permanent utilities are the lines most often left at placeholder value. Put the exclusion on the face of the estimate.
+9. **State the estimate class and band.** A test fit is Class 4 or 5 — roughly −15/−30% to +20/+50% at best. Never carry it to the dollar.
 
 ## Cross-check before you send
 
-- **Per capacity**, component by component, against the Tier 3 bands. Anything outside its band is either a specification decision worth naming or an error.
-- **Never price a stage by deck SF.** In the worked example below the structure lands near $990 per SF of deck — a meaningless number, because a stage is priced by span, height and load, and the deck is the cheap part. Use deck SF for decking only.
-- **Against the owner's own prior build** if one exists. One delivered project by the same owner beats every published index.
-- **Direction of every variance** — overstated, understated, or a discrepancy between sources. They are opposite actions.
-
-## Adjusting the card to a new project
-
-State each adjustment as a named multiplier on a named line. Never bury it in a blended factor.
-
-**Travels with escalation only** — fixture prices, LED, barricade, containers, consoles. These are national equipment markets.
-
-**Does not travel** — foundations (soil, water table, frost line are local, and they are a quarter of the structure), erection and install labour, crane and heavy equipment, permit path and fees, and anything sized by snow or seismic load. A northern roof carries snow; a southern festival roof does not.
-
-**Changes shape entirely** — hoisting and access. A stage built in the open with a crane on the slab is a different scope from the same stage lifted into an existing building, and no rate card covers that difference.
+- **Against a quote**, if one exists anywhere in the market for this scope. Any derived number more than ~25% off a real quote is wrong until proven otherwise, and the quote is not the thing that has to prove itself.
+- **Per capacity**, component by component. Outside the band is either a specification decision worth naming or an error.
+- **Never price a stage by deck SF.** A stage is priced by span, height and load; the deck is the cheap part.
+- **Direction of every variance** — overstated, understated, or a discrepancy between sources. Opposite actions.
 
 ## Worked example
 
-A 60' × 40' stage, roof over the stage only, ground-supported, 6,000 capacity, outdoor; 180 LF of barricade; one 24' × 14' LED wall; 60 effects fixtures; four 20' bar containers; 300 LF of temporary fence.
+A 60' × 40' black steel stage, ground-supported, outdoor; 180 LF of barricade; one 24' × 14' LED wall; 60 effects fixtures; four 20' bar containers; 300 LF of temporary fence. **A fabricator quote of $1,000,000 is in hand.**
 
-| Line | Qty | Rate | Amount |
-| --- | ---: | ---: | ---: |
-| Stage structure incl. foundations | 6,000 cap | 394.87 | 2,369,220 |
-| Stage deck & VIP platforms | 6,000 cap | 22.00 | 132,000 |
-| Effects fixtures | 60 ea | 2,471.16 | 148,270 |
-| — install @ 16.7% | | | 24,761 |
-| LED wall | 336 SF | 1,400.00 | 470,400 |
-| Crash barricade, delivered | 180 LF | 227.64 | 40,975 |
-| — corners @ 19% | | | 7,785 |
-| 20' bar containers | 4 ea | 16,875 | 67,500 |
-| Temporary fence | 300 LF | 22.79 | 6,837 |
-| Structural engineering @ 1.50% | | | 35,538 |
-| Plan review + inspections | 1 stage | 13,500 | 13,500 |
-| Production / stage design @ 3.15% | | | 74,630 |
-| **Subtotal — excludes sound, power, SFX** | | | **3,391,417** |
+| Line | Qty | Rate | Amount | Tier |
+| --- | ---: | ---: | ---: | :--: |
+| Black steel stage 60' × 40' | 1 | quote | 1,000,000 | A |
+| Foundations & footings | 1 | allowance | 240,000 | ratio, range $116–359K |
+| Erection labour + crane | 1 | allowance | 75,000 | only if outside the quote |
+| Structural engineering | 1 | absolute | 25,000 | delivered $22.1K / $31.9K |
+| Plan review + inspections | 1 stage | 13,500 | 13,500 | flat |
+| Stage / production design | 1 | allowance | 50,000 | |
+| Effects fixtures | 60 ea | 2,471 | 148,270 | counted |
+| — install @ 16.7% | | | 24,761 | ratio |
+| LED wall, 336 SF | 1 | **allowance** | 150,000 | **no delivered rate — quote it** |
+| Crash barricade, delivered | 180 LF | 227.64 | 40,975 | counted |
+| — corners @ 19% | | | 7,785 | ratio |
+| 20' bar containers | 4 ea | 16,875 | 67,500 | counted |
+| Temporary fence | 300 LF | 22.79 | 6,837 | counted |
+| **Total — excludes sound, power, SFX** | | | **1,849,628** | |
 
-Footings inside the structure line: **$594,674**. All-in **$565/cap**.
-
-Now the cross-check earns its place: lighting and video built up comes to **$643,431 = $107/cap**, against an outdoor band of $44–73/cap. That is not an arithmetic error — it is the $1,400/SF LED rate, which is an estimator's note rather than a delivered buy. **The line to interrogate is identified before the estimate leaves the building.** Get three LED quotes against the wall dimensions and replace it.
+The same estimate built from the capacity band returned **$3,391,417 — overstated by 83%**, because a $2.37M mainstage-canopy proxy replaced a $1.0M quote and then inflated every ratio riding on it. **The band was not wrong about mainstages. It was the wrong instrument.**
 
 ## Deliverable
 
-A line schedule, one row per package: quantity, unit, rate, rate tier, amount, what it excludes, and the cross-check column in $/cap. Footings, sound and power called out explicitly whether or not they carry a number. Estimate class and band on the face of it. Where a rate came from an estimator's note rather than a delivered invoice, mark it — that is the line that will move most.
+A line schedule: quantity, unit, rate, **evidence tier**, amount, exclusions, and a $/cap cross-check column. Foundations, sound and power called out explicitly whether or not they carry a number. Estimate class and band on the face of it. Every allowance named as an allowance, with the quote that would replace it identified.
 
 ## Where this card comes from
 
-Delivered line-item costs across five stages on one festival site (750 to 8,500 capacity, permanent build, forecast at completion), cross-read against a separate venue development budget for rates that site did not deliver. Every ratio ties to invoices. The LED $/SF is the one carried rate that is an estimate rather than an actual, and it is marked as such throughout.
+Delivered line-item costs across five stages on one festival site (750 to 8,500 capacity, permanent build, forecast at completion), cross-read against a separate venue development budget. Ratios tie to invoices. Rates are a starting basis for a new project, never a quote for it — three competing quotes settle every package, per `construction-pricing-and-bids`.
 
 ## Never
 
-Never add a capacity band to a counted schedule. Never price a stage by deck square footage. Never carry a foundation rate across a city. Never accept a barricade per-foot quote as the package price — corners and freight are separate and together they run a third of it. Never take an LED quote without the steel that holds it. Never let sound, power and SFX sit at placeholder value without saying so on the face of the estimate: unspent placeholders are how a structure overrun hides inside a total that looks under budget. Never quote a precision the test fit cannot support.
+Never use a capacity band when dimensions or a quote exist. Never let a derived number stand against a real quote without explaining the gap — and never assume the quote is the one that is wrong. Never apply a structure percentage below the absolute fee the work actually costs. Never carry a foundation number as a single rate, or across a city. Never price a stage by deck square footage. Never accept a barricade per-foot quote as the package price — corners and freight run a third of it. Never take an LED quote without the steel that holds it, or carry a $/SF you cannot source. Never let sound, power and SFX sit at placeholder value without saying so on the face of the estimate.
