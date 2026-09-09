@@ -1,0 +1,49 @@
+category,item,qty,unit,total_usd,unit_rate_usd,vendor,source,confidence,note
+Crowd control,Black crash barricade,200,ft,40151,200.76,,FT Invoice Tracker,actual,"Invoice line reads '200ft of Black Crash Barricades'. The cleanest rate in the file."
+Crowd control,Bike rack,200,each,42284,211.42,Suncoast Coverings,FT Phase 1 detail,actual,"CER note 'qty 200'. Budgeted $25000, actual $42284."
+Crowd control,VIP entry stanchions,,lot,9826,,Sonco,FT Phase 1 detail,actual,
+Security,Walk-through magnetometer system (OPENGATE with LTE WiFi),,system,148580,,CEIA USA,FT Phase 1 detail,actual,"Budgeted $100000, actual $148580 (+49%). Lane count not stated - get it before applying per-lane."
+Bars,20ft warehouse bar container,3,each,50625,16875.00,ARCA,FT Phase 2 detail,actual,"New build. The container-bar benchmark."
+Bars,Modular container bar (VIP entrance),1,each,8694,8694.00,ARCA,FT Phase 1 detail,actual,"Smaller unit than the 20ft warehouse containers."
+Bars,Bar back office / DLS,2,each,14200,7100.00,,FT Phase 2 detail,actual,
+Bars,Bar container openings + 14ft roll-up,3,lot,9298,,ATO Metal Services,FT Phase 1 detail,actual,"Cutting openings into containers - the fit-out cost containers hide."
+Structure,Stage design and fabrication (Infinity),,lot,2163275,,Mountain Production,FT Phase 1 detail,actual,"Structure + video support + FOH platform. OPEN-AIR and Miami-Dade wind rated."
+Structure,Space frame (Park stage),,lot,1534079,,Mountain Production,FT Phase 1 detail,actual,"Paid 1563912. Structure + HEQ + labour."
+Structure,Lighting towers (Infinity),,lot,92020,,Mountain Production,FT Phase 1 detail,actual,
+Structure,Steel columns 9ft x8 and 4ft x2 plus 8 extra pieces,18,lot,18725,1040.28,Mountain Production,FT Phase 1 detail,actual,"Rate is per piece across a mixed lot - treat as indicative."
+Structure,Custom 40ft FOH container fabrication,1,each,50290,50290.00,Mountain Production,FT Phase 1 detail,actual,
+Structure,VIP platforms and decking fabrication,,lot,145520,,Mountain Production,FT Phase 1 detail,actual,"Paid 259333 against a 145520 quote."
+Structure,Stage build labour,,lot,122716,,Island Productions,FT Phase 1 detail,actual,"Final project 149510 including Phase 2."
+Structure,Crane rental for stage build,,lot,45000,,George's Crane,FT Phase 1 detail,actual,"Only 6600 drawn at the time of the file."
+Structure,22G B-deck installation,3,section,14280,4760.00,,FT Phase 2 detail,actual,
+Structure,Corrugated panel install over masonry,,lot,16800,,FT Holdings (Avra),FT Invoice Tracker,actual,
+Foundations,Stage footings - hurricane rated (Infinity),,lot,826996,,EDT Elite,FT Phase 1 detail,actual,"615642 base + 211354 change order (+34%). MIAMI-DADE OPEN-AIR - do not apply to an indoor Brooklyn structure."
+Foundations,Stage rebar (Park),,lot,111400,,Miami Polish,FT Phase 1 detail,actual,"82400 + 29000."
+Foundations,Concrete footers (Park),,lot,60000,,Jorge Concrete Services,FT Phase 1 detail,actual,"Note how much cheaper than the Infinity footers - different structure, different wind case."
+Foundations,Column reorientation and underpinning,,lot,474033,,EDT Elite,FT Phase 1 detail,actual,"Budgeted 300000, actual 474033 (+58%)."
+Video,LED video wall purchase (Infinity),,lot,415575,,Audiotek,FT Phase 1 detail,actual,"Shared purchase with Park."
+Video,LED video wall purchase (Park),,lot,231796,,Audiotek,FT Phase 1 detail,actual,"Plus 8025 tax."
+Video,Stage video support structure (Park),,lot,24075,,Mountain Production,FT Phase 1 detail,actual,
+Lighting,Chauvet Colorstrike M,48,fixture,118616,2471.17,LPS,FT Phase 1 detail,actual,"The house-rig benchmark fixture."
+Lighting,LED rope light,,lot,54060,,Neon Guardians,FT Phase 1 detail,disputed,"In dispute at the time of the file - verify before using."
+Lighting,RGBW pixel bars 34ft,164,each,7500,45.73,Neon Guardians,FT Phase 1 detail,quote,"Quoted not paid. Controllers included."
+Lighting,Site lighting including install,,lot,400000,,,FT Capex Original,budget,"Budget line, not an actual."
+Acoustics,Acoustic fireproofing and fire-stopping,,lot,109000,,sprayworks,FT Phase 1 detail,actual,"The only acoustic treatment actual in the file."
+Acoustics,Container sound barrier wall (3rd level),,lot,22448,,ARCA,FT Phase 1 detail,actual,
+Plumbing,Permanent bathroom block incl drainage,130,fixture/seat,750000,5769.23,,FT Capex Original,forecast,"Budget 550000, forecast 750000. 'Need code requirements' - the qty basis is seats not fixtures, confirm."
+Plumbing,VIP bathroom trailers,40,seat,160000,4000.00,,FT Capex Original,forecast,"Rental alternative noted in the file: 4 comfort stations at 25K per event plus servicing."
+Site,Spider ramps and conduit runs,300,each,50000,166.67,,FT Capex Original,budget,"CER note 'qty 300'."
+Site,New roll-up door,1,each,10140,10140.00,Another Garage,FT Phase 1 detail,actual,"Paid 12580."
+Site,Roller door guide hinges and wheels,10,each,1700,170.00,,FT Phase 2 detail,actual,
+Furniture,34in spool table with lower shelf,39,each,33749,865.36,,FT Phase 2 detail,actual,
+Equipment,5K house forklift,2,each,21138,10569.00,,FT Phase 2 detail,actual,"Paid 20500."
+Entrance,Entry portals (box office and tables),,lot,21400,,ARCA,FT Phase 1 detail,actual,
+Entrance,Entry signage - main plus DJ booth,,lot,35096,,ARCA,FT Phase 1 detail,actual,
+Entrance,Table entry metal screening and buildout,,lot,44200,,ARCA,FT Phase 1 detail,actual,
+Entrance,Truss install,,lot,4366,,ARCA,FT Phase 1 detail,actual,
+Soft costs,County and city impact fees,,lot,843740,,City of Hialeah,FT Phase 2 detail,actual,"700490 county + 143250 city. Budgeted at ZERO originally."
+Soft costs,Liquor licence,,lot,250000,,,FT Capex Original,forecast,"CER approved budget was ZERO. Came in at 250000."
+Soft costs,Architect,,lot,981740,,,FT Phase 2 detail,forecast,"CER 250000, forecast 981740 (+293%). The largest soft-cost overrun in the file."
+Soft costs,Structural engineer,,lot,44000,,YHCE,FT Capex Original,forecast,"Budget 25000."
+Soft costs,Electrical engineer master plan,,lot,32000,,HMB,FT Phase 2 detail,quote,"Plus 12000 dry-utility infrastructure consulting."
+Soft costs,Creative production designer,,lot,195000,,,FT Capex Original,forecast,"Budget 100000. 250k fee plus travel per the note."
