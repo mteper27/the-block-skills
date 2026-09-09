@@ -115,26 +115,32 @@ Two readings worth keeping. Structure per capacity barely moved between a crowd 
 
 ## Worked example
 
-A 60' × 40' black steel stage, ground-supported, outdoor; 180 LF of barricade; one 24' × 14' LED wall; 60 effects fixtures; four 20' bar containers; 300 LF of temporary fence. **A fabricator quote of $1,000,000 is in hand.**
+A 60' × 40' black steel stage, ground-supported, outdoor; 180 LF of barricade; one 24' × 14' LED wall; 60 effects fixtures; four 20' bar containers; 300 LF of temporary fence. **A fabricator quote of $1,000,000 is in hand, covering deck, roof, towers and erection. Footings excluded.**
 
-| Line | Qty | Rate | Amount | Tier |
-| --- | ---: | ---: | ---: | :--: |
-| Black steel stage 60' × 40' | 1 | quote | 1,000,000 | A |
-| Foundations & footings | 1 | allowance | 240,000 | ratio, range $116–359K |
-| Erection labour + crane | 1 | allowance | 75,000 | only if outside the quote |
-| Structural engineering | 1 | absolute | 25,000 | delivered $22.1K / $31.9K |
-| Plan review + inspections | 1 stage | 13,500 | 13,500 | flat |
-| Stage / production design | 1 | allowance | 50,000 | |
-| Effects fixtures | 60 ea | 2,471 | 148,270 | counted |
-| — install @ 16.7% | | | 24,761 | ratio |
-| LED wall, 336 SF | 1 | **allowance** | 150,000 | **no delivered rate — quote it** |
-| Crash barricade, delivered | 180 LF | 227.64 | 40,975 | counted |
-| — corners @ 19% | | | 7,785 | ratio |
-| 20' bar containers | 4 ea | 16,875 | 67,500 | counted |
-| Temporary fence | 300 LF | 22.79 | 6,837 | counted |
-| **Total — excludes sound, power, SFX** | | | **1,849,628** | |
+| Line | Amount | Evidence |
+| --- | ---: | --- |
+| Black steel stage — deck, roof, towers, erection | 1,000,000 | **quoted** |
+| Foundations & footings | 150,000 | ratio, range $108–335K |
+| Anchor bolts, embeds, survey, setting template | 15,000 | allowance — interface gap |
+| Structural engineering / PE stamp | 25,000 | absolute |
+| Plan review + inspections | 13,500 | flat per stage |
+| Stage / production design | 50,000 | allowance |
+| Effects fixtures (60 @ $2,471) | 148,270 | counted |
+| — install @ 16.7% | 24,761 | ratio |
+| LED wall, 336 SF | 150,000 | **allowance — quote it** |
+| Crash barricade, 180 LF @ $227.64 | 40,975 | counted |
+| — corners @ 19% | 7,785 | ratio |
+| 20' bar containers (4 @ $16,875) | 67,500 | counted |
+| Temporary fence, 300 LF @ $22.79 | 6,837 | counted |
+| **Total — excludes sound, power, SFX** | **1,699,628** | |
 
-The same estimate built from the capacity band returned **$3,391,417 — overstated by 83%**, because a $2.37M mainstage-canopy proxy replaced a $1.0M quote and then inflated every ratio riding on it. **The band was not wrong about mainstages. It was the wrong instrument.**
+**The quote is 59% of the delivered cost.** The other $699,628 is everything a fabricator does not sell you — and that ratio is the most useful single number here, because it is what an owner reading a stage quote gets wrong.
+
+Three leveling moves worth copying. **Erection was inside the quote**, so the separate erection-and-crane allowance came out; carrying both is a $68K double-count, and on this card erection runs ~7.3% of steel. **Footings were excluded**, so they are a line of their own, taken at the *stage-roof* end of the range rather than the crowd-roof end — the two delivered analogues were 11.6% and 35.9%, and roof duty is what separates them. And **footings excluded plus erection included creates an interface**: the fabricator erects on a foundation someone else poured, so anchor bolts, embeds, the setting template and the survey belong to nobody until the contract says otherwise. That gap is where the change order comes from — the one delivered footing contract on this card took **34%**.
+
+Still unpriced and worth asking the fabricator before this estimate is trusted: freight to site, shop drawings, the wind and live load basis and code edition it was designed to, guardrail and stair compliance, ADA access to the deck, and sales tax.
+
+The same estimate built from a capacity band returned **$3,391,417 — overstated 100%** against the quoted build, because a $2.37M mainstage-canopy proxy replaced a $1.0M quote and inflated every ratio riding on it. **The band was not wrong about mainstages. It was the wrong instrument.**
 
 ## Deliverable
 
