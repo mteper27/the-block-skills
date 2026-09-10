@@ -29,11 +29,12 @@ for lab,v,note in [('Building SF',SF,'THE basis. Mezzanine adds capacity inside 
                    ('Perimeter LF',PERI,'Approximated as square. Replace with the survey.'),
                    ('New wall band SF',BAND,'1,089 LF perimeter x 30 ft lift.'),
                    ('Capacity',7440,'Wake PD04 Rev 4.4.'),
-                   ('General conditions basis',1,'TOGGLE: 1 = the 11% percentage. 0 = Thomas\u2019s own 013000 + 015800 line items ($1,696,000) instead. NEVER BOTH \u2014 they are the same site cost.')]:
+                   ('General conditions basis',1,'TOGGLE: 1 = the 11% percentage. 0 = Thomas\u2019s own 013000 + 015800 line items ($1,696,000) instead. NEVER BOTH \u2014 they are the same site cost.'),
+                   ('Kitchen scope (0 / 1 / 2)',1,'TOGGLE for division 800. 0 = concessions only, no kitchen. 1 = warming / finishing kitchen. 2 = full production kitchen with a grease hood. Each level includes the one below it.')]:
     ws.cell(r,2,lab).font=BLK
     c=ws.cell(r,5,v); c.font=BLUE; c.fill=YEL; c.border=BOX; c.number_format='#,##0'
     ws.cell(r,7,note).font=SM; ws.cell(r,7).alignment=wr(); r+=1
-SFR=r-7; SEATR=SFR+1; GCMODE=SFR+6; r+=1
+SFR=r-8; SEATR=SFR+1; GCMODE=SFR+6; KITCH=SFR+7; r+=1
 for i,h in enumerate(['Item','Qty','Unit','Rate','Amount','Rate source / basis'],2):
     c=ws.cell(r,i,h); c.font=WHT; c.fill=HDR; c.alignment=Alignment(horizontal='center',vertical='center',wrap_text=True)
 r+=1
@@ -61,7 +62,11 @@ for code,name,groups in D:
             for i in range(2,8): ws.cell(r,i).border=BOX
             r+=1
         ws.cell(r,2,'   '+gname+' — subtotal').font=BOLD
-        c=ws.cell(r,6,f'=SUM(F{gstart}:F{r-1})'); c.font=BOLD; c.number_format=CUR
+        lvl=int(gname[1]) if code=='800' and gname[:1]=='L' else None
+        f_=f'=SUM(F{gstart}:F{r-1})' if lvl is None else f'=IF($E${KITCH}>={lvl},SUM(F{gstart}:F{r-1}),0)'
+        c=ws.cell(r,6,f_); c.font=BOLD; c.number_format=CUR
+        if lvl is not None:
+            ws.cell(r,7,f'Included only when the kitchen scope toggle is {lvl} or higher.').font=SM
         for i in range(2,8): ws.cell(r,i).fill=GRY
         gsubs.append(r); r+=1
     ws.cell(r,2,f'{code} — DIVISION TOTAL').font=Font(name=F,size=10,bold=True,color='1F3864')
@@ -71,7 +76,7 @@ for code,name,groups in D:
     divs.append((code,r)); r+=2
 TR=[x for c,x in divs if c not in ('600','700')]
 FFE=[x for c,x in divs if c=='600'][0]; SOFT=[x for c,x in divs if c=='700'][0]
-ws.cell(r,2,'TRADE COST — divisions 000 to 500').font=Font(name=F,size=12,bold=True,color='1F3864')
+ws.cell(r,2,'TRADE COST — divisions 000-500 plus 800 (kitchen)').font=Font(name=F,size=12,bold=True,color='1F3864')
 ws.cell(r,2).border=TOPB
 c=ws.cell(r,6,'='+'+'.join(f'F{x}' for x in TR)); c.font=Font(name=F,size=12,bold=True,color='1F3864')
 c.number_format=CUR; c.border=TOPB
@@ -316,7 +321,7 @@ for name,now,tgt,what,who,nec,neg in M:
     r+=1
 r+=1
 mk.cell(r,2,'HOW IT STACKS NOW').font=H2; r+=1
-for lab,f_,note in [('TRADE COST — the work itself',f"='Detailed Budget'!F{TRADE}",'divisions 000 to 500'),
+for lab,f_,note in [('TRADE COST — the work itself',f"='Detailed Budget'!F{TRADE}",'divisions 000-500 plus 800'),
     ('+ Escalation, 10% of trade',f"='Detailed Budget'!F{ESC}",'on trade cost only'),
     ('+ General conditions, 11% of trade',f"='Detailed Budget'!F{GC}",'on trade cost only'),
     ('+ Overhead, profit & insurance, 9% of trade',f"='Detailed Budget'!F{OHP}",'on trade cost only'),

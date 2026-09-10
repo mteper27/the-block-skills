@@ -38,7 +38,7 @@ DIV = {
  '100000': ('IN',  'Div 400 — Specialties'),
  '100500': ('IN',  'Div 400 — Acoustic treatment'),
  '101400': ('IN',  'Div 400 — Signage & wayfinding'),
- '114000': ('OUT', 'KITCHEN OUTSOURCED. Your decision: bring in an operator to run F&B rather than build a kitchen. Hood, hood fire suppression and food service equipment all come with them.'),
+ '114000': ('IN',  'Div 800 \u2014 Kitchen L2. He listed food service equipment, the hood and hood fire suppression as BY OWNER and never put a price on any of them. Division 800 prices all three.'),
  '142000': ('IN',  'Div 500 — Conveying'),
  '210000': ('IN',  'Div 500 — Fire protection'),
  '220000': ('IN',  'Div 500 — Plumbing'),
@@ -70,11 +70,11 @@ OVR = {
  ('260000',16,'Provide temp. lighting'): ('IN',0,'HIS BASIS IS 125,000 SF at $1.25. The building is 74,100 SF.'),
  ('283100',1,'F&I Fire alarm'): ('IN',0,'HIS BASIS IS 100,000 SF at $2.50. Alarm coverage in this model is 88,100 SF — floor plus mezzanine.'),
  ('142000',3,'Hydraulic Lift'): ('ADD',0,'Priced at nothing. A 12x6 stage lift is real money — budget $85,000-140,000 installed if the production team wants it.'),
- ('220000',15,'F&I Kitchen roughing'): ('OUT',0,'KITCHEN OUTSOURCED. Rough-in follows the operator, and most operators bring their own fit-out.'),
- ('220000',18,'Gas Piping to Equipment'): ('OUT',0,'KITCHEN OUTSOURCED. Revisit only if the operator needs gas.'),
- ('092000',9,'FRP Kitchen walls'): ('OUT',0,'KITCHEN OUTSOURCED.'),
- ('092300',5,'Tile & Base at Kitchen'): ('OUT',0,'KITCHEN OUTSOURCED.'),
- ('260000',8,'F/I dedicated circuits at all Kitchen'): ('OUT',0,'KITCHEN OUTSOURCED.'),
+ ('220000',15,'F&I Kitchen roughing'): ('IN',0,'Div 800 \u2014 Kitchen L1. His $135,000 is a full-production number at qty 0; we carry $78,000 at warming scope and the rest arrives at L2.'),
+ ('220000',18,'Gas Piping to Equipment'): ('IN',0,'Div 800 \u2014 Kitchen L2. His $55,000 is PIPING only. He carries no gas SERVICE at all, which is a separate National Grid application with its own lead time.'),
+ ('092000',9,'FRP Kitchen walls'): ('IN',0,'Div 800 \u2014 Kitchen L1. Moved out of division 400 so the kitchen toggle controls it.'),
+ ('092300',5,'Tile & Base at Kitchen'): ('IN',0,'Div 800 \u2014 Kitchen L1, as quarry tile and coved base. DOH requires a hard non-absorbent coved floor in any prep area.'),
+ ('260000',8,'F/I dedicated circuits at all Kitchen'): ('IN',0,'Div 800 \u2014 Kitchen L1 and L2, at his own $35/SF rate.'),
 }
 
 def classify(csi,no,desc):
