@@ -66,7 +66,9 @@ Nothing gets priced without one of these. If the drawing does not support a meas
 | Lighting install, single room | **16.7%** | fixture purchase |
 | Lighting install, distributed across a site | **54%** (67% with electrical) | fixture purchase |
 
-**Foundations are a range, not a rate.** Two stages on the same site came in at 11.6% and 35.9% of fabricated steel — a three-fold spread driven by soil, depth and roof duty. On a $1M steel quote that is $116K to $359K. Carry the range until someone drills.
+**Foundations are a range, not a rate, and the driver is the design wind case.** Two stages on the same site came in at 11.6% and 35.9% of fabricated steel. The high one is a mass foundation resisting overturning and uplift on an open-air stage at Miami-Dade design wind (~175 mph); the low one is a different structure and a different wind case. On a $1M steel quote the spread is $116K to $359K.
+
+**Never move a foundation rate between wind regions, or from an open-air stage to an enclosed one.** An interior structure carries no wind load at all, so the hurricane-rated end of that range is not a conservative choice indoors — it is the wrong load case. Restate the design case, then carry the range until someone drills.
 
 **Percentages have absolute floors.** Structural engineering delivered at $22,060 and $31,920 on two stages — 0.67% of one and 1.50% of the other. Applying 1.5% to a $1M stage returns $15,000, which is below both fees actually paid. Below roughly $2M of structure, carry engineering, plan review, expediting and design as **absolute amounts**, not percentages:
 
@@ -115,6 +117,20 @@ Two readings worth keeping. Structure per capacity barely moved between a crowd 
 - **Never price a stage by deck SF.** A stage is priced by span, height and load; the deck is the cheap part.
 - **Direction of every variance** — overstated, understated, or a discrepancy between sources. Opposite actions.
 
+## Moving a rate onto a different project
+
+State every adjustment as a named line, never a blended factor.
+
+**Travels with escalation only** — fixture prices, LED, barricade, containers, consoles. National equipment markets.
+
+**Does not travel** — foundations (soil, water table, frost line and design wind are all local), erection and install labour, crane and heavy equipment, the permit path and its fees, and anything sized by snow, seismic or wind load.
+
+**Changes shape entirely** — hoisting and access. A stage built in the open with a crane on the slab is a different scope from the same stage lifted into an existing building, and no rate card covers that difference.
+
+**Strip the scope before comparing the rate.** An open-air stage buys a roof and crowd weather protection that an enclosed room already has, and hurricane foundations an interior structure does not need. Take both out of an outdoor comparable before applying it indoors, or the transfer imports scope your project does not have.
+
+**Ground-supported still beats hung**, everywhere. A stage and mezzanine standing on their own footings take the rigging load out of the building, which is what lets roof steel stay light. Test it before pricing a rigging grid.
+
 ## Worked example
 
 A 60' × 40' black steel stage, ground-supported, outdoor; 180 LF of barricade; one 24' × 14' LED wall; 60 effects fixtures; four 20' bar containers; 300 LF of temporary fence. **A fabricator quote of $1,000,000 is in hand, covering deck, roof, towers and erection. Footings excluded.**
@@ -138,7 +154,7 @@ A 60' × 40' black steel stage, ground-supported, outdoor; 180 LF of barricade; 
 
 **The quote is 59% of the delivered cost.** The other $699,628 is everything a fabricator does not sell you — and that ratio is the most useful single number here, because it is what an owner reading a stage quote gets wrong.
 
-Three leveling moves worth copying. **Erection was inside the quote**, so the separate erection-and-crane allowance came out; carrying both is a $68K double-count, and on this card erection runs ~7.3% of steel. **Footings were excluded**, so they are a line of their own, taken at the *stage-roof* end of the range rather than the crowd-roof end — the two delivered analogues were 11.6% and 35.9%, and roof duty is what separates them. And **footings excluded plus erection included creates an interface**: the fabricator erects on a foundation someone else poured, so anchor bolts, embeds, the setting template and the survey belong to nobody until the contract says otherwise. That gap is where the change order comes from — the one delivered footing contract on this card took **34%**.
+Three leveling moves worth copying. **Erection was inside the quote**, so the separate erection-and-crane allowance came out; carrying both is a $68K double-count, and on this card erection runs ~7.3% of steel. **Footings were excluded**, so they are a line of their own, taken at the *stage-roof* end of the range rather than the crowd-roof end — the two delivered analogues were 11.6% and 35.9%, and the design wind case is what separates them. And **footings excluded plus erection included creates an interface**: the fabricator erects on a foundation someone else poured, so anchor bolts, embeds, the setting template and the survey belong to nobody until the contract says otherwise. That gap is where the change order comes from — the one delivered footing contract on this card took **34%**.
 
 Still unpriced and worth asking the fabricator before this estimate is trusted: freight to site, shop drawings, the wind and live load basis and code edition it was designed to, guardrail and stair compliance, ADA access to the deck, and sales tax.
 
