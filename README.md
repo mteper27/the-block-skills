@@ -12,8 +12,9 @@ September 2026.
 | --- | --- |
 | [venue-buildout-underwriting](venue-buildout-underwriting/SKILL.md) | Tier every budget line 0 / 1 / R / 2, model the shell-and-height decision on its own sheet, and produce a BASE / ELEVATED / PREMIUM ladder with the step-ups priced. Cost-down levers ranked by certainty; phasing premiums per deferred item. |
 | [construction-budget-audit](construction-budget-audit/SKILL.md) | The forensic pass: reconcile to source to the dollar, hunt zero-quantity trades, test unit prices against their neighbours, follow the markup cascade, un-stack contingency, reconcile the area basis, read the hidden tabs, find the internal comps. |
+| [construction-pricing-and-bids](construction-pricing-and-bids/SKILL.md) | Building a number out of prices instead of rates: package the scope so it can be bid, three genuinely competing quotes per package, leveling and add-backs, the low bid read as a scope question, quote provenance tiering (written / budgetary / desk / allowance), and honest sole-source handling. Every number carries its estimate class and band. |
 | [venue-licensing-requirements](venue-licensing-requirements/SKILL.md) | Theater use-classification → liquor licence → cabaret licence as a physical dependency chain on the drawings. Compliance floor vs the full treatment, priced. Reprice before you delete. |
-| [venue-unit-costs](venue-unit-costs/SKILL.md) | Price by the unit, not the lump — crash barricade per foot, bike racks each, container bars each, security lanes, decking, footings, fixtures. Ships `data/factory-town-unit-costs.csv`: 48 rates mined from the Factory Town CAPEX file, 37 of them paid actuals with vendors named. Includes the adjustments (wind region, indoor/outdoor, labour market) that make a rate portable. |
+| [venue-unit-costs](venue-unit-costs/SKILL.md) | Price by the unit, not the lump. Take the quantities off the test fit, apply measured rates from `data/factory-town-unit-costs.csv` (68 lines, mostly paid actuals with the vendor named), and cross-check before sending. Carries the evidence hierarchy (a quote beats every derived rate), confidence levels, ratios with their absolute floors, scaling laws for extrapolating a lump to a different size, and the adjustments — wind case, indoor/outdoor, labour market, access — that must be made before any rate moves between projects. |
 | [venue-equipment-sourcing](venue-equipment-sourcing/SKILL.md) | Sound, production, bars (built-in vs container vs modular), kitchen, POS, seating. Build/buy/lease/rent with real payback arithmetic, benchmarked against the operator's own prior builds. |
 
 ## The professional-role skills
@@ -32,8 +33,10 @@ Three views of the same project, in the order the questions have to be answered:
 
 The worked examples are real: the 165 Randolph Master Development Budget v1
 (7 Sep 2026, architect Wake), Underwriting V13.4 LN Co-Pro, the Factory Town
-budget-builder export (12 shows, 15 per-stage cost points), and the Brooklyn
-Paramount F&B build cited inside the development budget itself.
+budget-builder export (12 shows, 15 per-stage cost points), the Factory Town
+CAPEX budget workbook (Phase 1 detail, forecast 10/15/25 — five delivered
+stages, line-item vendor actuals, and the AV rent-vs-buy file), and the
+Brooklyn Paramount F&B build cited inside the development budget itself.
 
 ## A standing caution
 
