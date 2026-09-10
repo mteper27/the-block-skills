@@ -75,7 +75,9 @@ Nothing gets priced without one of these. If the drawing does not support a meas
 | Structural engineering | $22 – 32K per stage |
 | Private provider plan review + inspections | $13,500 per stage |
 | Expediting, per permit | $1,500 |
-| Architect of record | ~1.0% of programme |
+| Architect of record | **do not carry a percentage** — see below |
+
+**The architect line in this source is unresolved and must not be used as a rate.** Against a $250,000 approval, one sheet reports $132,500 committed and a later sheet forecasts **$981,740** — the same budget line, two views, a 293% overrun that is forecast rather than invoiced. Price the architect from a fee proposal for your own scope, not from anyone's ratio.
 
 ## Capacity bands — what they actually measured
 
@@ -103,7 +105,7 @@ Two readings worth keeping. Structure per capacity barely moved between a crowd 
 5. **Production packages by count** — fixtures, then install as a ratio of purchase. LED as an allowance until quoted. Support steel for anything flown belongs to the fabricator's line.
 6. **Site and guest infrastructure by measurement** — barricade LF plus corners plus freight, fence LF, containers each.
 7. **Soft costs as absolutes** at this scale, not percentages.
-8. **Name what is excluded.** Sound, power, SFX, HVAC and permanent utilities are the lines most often left at placeholder value. Put the exclusion on the face of the estimate.
+8. **Name what is excluded, and hunt the lines approved at zero.** Sound, power, SFX, HVAC and permanent utilities are the lines most often left at placeholder value. Worse are the lines carried at **zero** that are not optional: on this source, county and city impact fees were approved at $0 and came in at **$843,740**, and a liquor licence approved at $0 forecast at $250,000. A line at zero is not a saving — it is scope nobody priced. Put every one of them on the face of the estimate.
 9. **State the estimate class and band.** A test fit is Class 4 or 5 — roughly −15/−30% to +20/+50% at best. Never carry it to the dollar.
 
 ## Cross-check before you send
