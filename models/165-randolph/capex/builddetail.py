@@ -21,7 +21,7 @@ wb=Workbook(); ws=wb.active; ws.title='Detailed Budget'
 for col,w in zip('ABCDEFG',[3,58,10,7,12,14,64]): ws.column_dimensions[col].width=w
 r=2
 ws.cell(r,2,'165 RANDOLPH STREET').font=H1; r+=1
-ws.cell(r,2,'DETAILED DEVELOPMENT BUDGET').font=H2; r+=1
+ws.cell(r,2,'DETAILED DEVELOPMENT BUDGET \u2014 V2, DILIGENCE REVIEWED').font=H2; r+=1
 ws.cell(r,2,'Brooklyn NY 11237 · Developer: owner\u2019s team \u00b7 Co-pro: Live Nation / Insomniac \u00b7 Landlord: Eric Cohen \u00b7 CONSTRUCTION CAPEX ONLY \u00b7 CONFIDENTIAL').font=SM; r+=2
 for lab,v,note in [('Building SF',SF,'THE basis. Mezzanine adds capacity inside this envelope, not area. Alleys carry no cost.'),
                    ('Theatre seat rate ($/seat)',25,'TOGGLE: 25 = MT sourcing, 125 = as filed in the dev budget. Drives the removable seating line in division 600.'),
@@ -90,7 +90,7 @@ ws.cell(r,4,'Each rate below is applied to TRADE COST only. They do not compound
 r+=1
 M0=r
 for lab,basis,rate in [('Escalation','% of trade cost',0.10),
-                       ('General conditions','% of trade cost',0.110),
+                       ('General conditions','% of trade cost',0.085),
                        ('Overhead, profit & insurance','% of trade cost',0.09)]:
     ws.cell(r,2,lab).font=BLK; ws.cell(r,4,basis).font=SM
     c=ws.cell(r,5,rate); c.number_format=PCT; c.font=BLUE; c.fill=YEL; c.border=BOX
@@ -99,7 +99,8 @@ for lab,basis,rate in [('Escalation','% of trade cost',0.10),
 ESC,GC,OHP=[M0+i for i in range(3)]
 for x in (ESC,OHP): ws.cell(x,6,f'=F{TRADE}*E{x}').number_format=CUR
 ws.cell(GC,6,f"=IF($E${GCMODE}=1,F{TRADE}*E{GC},'Thomas Reconciliation'!$G${TRGC})").number_format=CUR
-ws.cell(GC,7,'Switches with the General conditions basis toggle at the top of this sheet.').font=SM
+ws.cell(GC,7,('WAS 11%. CUT TO 8.5% ON EVIDENCE \u2014 Schimenti Construction priced general conditions at 7.80% and 8.90% on Eric Cohen\u2019s two 555 Johnson schemes, '
+              'open shop, same submarket. See the Diligence Review sheet. Also switches to his own line items with the toggle at the top of this sheet.')).font=SM
 ws.cell(r,2,'Markups — subtotal').font=BOLD; ws.cell(r,2).border=TOPB
 c=ws.cell(r,6,f'=F{ESC}+F{GC}+F{OHP}'); c.font=BOLD; c.number_format=CUR; c.border=TOPB
 for i in (3,4,5,7): ws.cell(r,i).border=TOPB
@@ -226,7 +227,7 @@ for i,h in enumerate(['Rate','As carried','Target','Worth','','Why the target is
 r+=1
 for lab,now,tgt,worth,why in [
   ('Escalation',0.10,0.06,1_500_053,'10% assumes a long gap between estimate and buyout. Buy out steel, switchgear, elevators and HVAC plant early and lock the price.'),
-  ('General conditions',0.110,0.085,937_533,'Duration-driven, not scope-driven. Ask for it as a MONTHLY RATE plus a duration instead of a percentage and it has to defend itself.'),
+  ('General conditions',0.085,0.078,286_246,'ALREADY CUT from 11% to 8.5% on the Schimenti evidence. 7.80% is what he actually charged Eric on the full 555 Johnson scheme, so there is one more point in it.'),
   ('Overhead, profit & insurance',0.09,0.065,937_533,'Split it apart: insurance as an actual broker premium, overhead and profit as a FIXED FEE IN DOLLARS so it does not grow when scope grows.')]:
     op.cell(r,2,lab).font=BLK
     c=op.cell(r,3,now); c.number_format=PCT; c.font=BLUE
@@ -323,7 +324,7 @@ r+=1
 mk.cell(r,2,'HOW IT STACKS NOW').font=H2; r+=1
 for lab,f_,note in [('TRADE COST — the work itself',f"='Detailed Budget'!F{TRADE}",'divisions 000-500 plus 800'),
     ('+ Escalation, 10% of trade',f"='Detailed Budget'!F{ESC}",'on trade cost only'),
-    ('+ General conditions, 11% of trade',f"='Detailed Budget'!F{GC}",'on trade cost only'),
+    ('+ General conditions, 8.5% of trade',f"='Detailed Budget'!F{GC}",'CUT from 11% on the 555 Johnson evidence'),
     ('+ Overhead, profit & insurance, 9% of trade',f"='Detailed Budget'!F{OHP}",'on trade cost only'),
     ('CONSTRUCTION COST — the work plus its markups',f"='Detailed Budget'!F{CONSTR}",'what it costs to build'),
     ('+ Contingency',f"='Detailed Budget'!F{CONT}",'ONE pot. Was two, stacked. Now a flat dollar figure you set'),
@@ -413,5 +414,93 @@ tr.freeze_panes='C%d'%first
 tr.auto_filter.ref=f'B{first-1}:I{last}'
 print('total row',TOT)
 
+
+# ================= DILIGENCE REVIEW SHEET =================
+import diligence as DG
+dv=wb.create_sheet('Diligence Review',1)
+for col,w in zip('ABCDEF',[3,30,52,30,52,52]): dv.column_dimensions[col].width=w
+r=2
+dv.cell(r,2,'DILIGENCE REVIEW').font=H1; r+=1
+dv.cell(r,2,'The 165 Randolph diligence folder, 26 files, uploaded 10 September 2026 — read against this budget.').font=SM; r+=2
+dv.cell(r,2,('THE HEADLINE. Two files in the folder are readable cost documents, and they are the best third-party evidence in the whole exercise: '
+             'Schimenti Construction’s conceptual budgets for 555 Johnson Avenue, addressed to Eric Cohen at EBC Capital. Our own landlord, '
+             'the next block over, open-shop labour, priced by a real NYC general contractor. That gives us actual percentages to hold our '
+             'estimator against instead of my benchmarks. It moved general conditions from 11% to 8.5%. Everything else in the folder is a '
+             'scanned drawing, a CAD plot or a custom-font PDF with no recoverable text — the inventory at the bottom says which is which, '
+             'and which unread files are worth someone opening by hand.')).font=BLK
+dv.cell(r,2).alignment=wr(); dv.merge_cells(start_row=r,start_column=2,end_row=r,end_column=6)
+dv.row_dimensions[r].height=62; r+=2
+
+dv.cell(r,2,'FINDINGS').font=H2; r+=1
+for i,h in enumerate(['Finding','What the diligence says','What we carried','So what','Action'],2):
+    c=dv.cell(r,i,h); c.font=WHT; c.fill=HDR; c.alignment=Alignment(horizontal='center',vertical='center',wrap_text=True)
+r+=1
+for topic,says,carried,sowhat,action in DG.F:
+    dv.cell(r,2,topic).font=BOLD; dv.cell(r,2).alignment=wr()
+    for col,txt in ((3,says),(4,carried),(5,sowhat)):
+        dv.cell(r,col,txt).font=BLK; dv.cell(r,col).alignment=wr()
+    ac=dv.cell(r,6,action)
+    ac.font=RED2 if action.split()[0] in ('APPLIED','ASK','DECIDE','VERIFY','SEQUENCE') else BLK
+    ac.alignment=wr()
+    for i in range(2,7): dv.cell(r,i).border=BOX
+    dv.row_dimensions[r].height=max(56,9.6*(max(len(says),len(sowhat),len(action))//48+1))
+    r+=1
+r+=2
+
+dv.cell(r,2,'THE COMP — SCHIMENTI CONSTRUCTION, 555 JOHNSON AVENUE, FOR ERIC COHEN / EBC CAPITAL').font=H2; r+=1
+dv.cell(r,2,('Full scheme 8 Jan 2019 over ~135,000 SF, and the partial site re-use option 11 Jan 2019. '
+             'Note that 555 Johnson is ~135,000 SF — which is almost certainly where the 135,953 SF in Thomas’s header came from.')).font=SM
+dv.cell(r,2).alignment=wr(); dv.merge_cells(start_row=r,start_column=2,end_row=r,end_column=6)
+dv.row_dimensions[r].height=26; r+=1
+for i,h in enumerate(['Division','Full scheme','$/SF','Partial re-use','$/SF'],2):
+    c=dv.cell(r,i,h); c.font=WHT; c.fill=HDR; c.alignment=Alignment(horizontal='center',wrap_text=True)
+r+=1
+for nm,f_,fsf,pr,psf in DG.COMPS:
+    hv=nm.strip().startswith(('CONSTRUCTION','CORE','GRAND','Fit-out'))
+    dv.cell(r,2,nm).font=BOLD if hv else BLK
+    for col,v,fmt in ((3,f_,CUR),(4,fsf,'$#,##0.00'),(5,pr,CUR),(6,psf,'$#,##0.00')):
+        c=dv.cell(r,col,v); c.number_format=fmt; c.font=BOLD if hv else BLUE
+    if hv:
+        for i in range(2,7): dv.cell(r,i).fill=GRY
+    for i in range(2,7): dv.cell(r,i).border=BOX
+    r+=1
+r+=1
+for lab,a,b in [('General conditions as % of construction subtotal','7.80%','8.90%'),
+                ('Insurance, fees & bonds as % of construction subtotal','7.11%','8.98%'),
+                ('Construction contingency','EXCLUDED','EXCLUDED'),
+                ('Builder’s risk insurance','EXCLUDED','EXCLUDED'),
+                ('Labour basis','Open shop, 7am-3:30pm single shift','Open shop'),
+                ('Construction duration','60 weeks of construction, 70-week active programme','same')]:
+    dv.cell(r,2,lab).font=BOLD
+    dv.cell(r,3,a).font=BLUE; dv.cell(r,3).alignment=Alignment(horizontal='center')
+    dv.cell(r,5,b).font=BLUE; dv.cell(r,5).alignment=Alignment(horizontal='center')
+    for i in range(2,7): dv.cell(r,i).border=BOX
+    r+=1
+r+=2
+
+dv.cell(r,2,'WORTH SOMEONE OPENING BY HAND — SCANNED, NO TEXT CAME OUT').font=RED2; r+=1
+for nm,why in DG.NOT_READ:
+    dv.cell(r,2,nm).font=BOLD; dv.cell(r,2).alignment=wr()
+    dv.cell(r,3,why).font=BLK; dv.cell(r,3).alignment=wr()
+    dv.merge_cells(start_row=r,start_column=3,end_row=r,end_column=6)
+    for i in range(2,7): dv.cell(r,i).border=BOX
+    dv.row_dimensions[r].height=max(28,9.6*(len(why)//95+1))
+    r+=1
+r+=2
+
+dv.cell(r,2,'FULL FILE INVENTORY').font=H2; r+=1
+for i,h in enumerate(['File','Status','What it is'],2):
+    c=dv.cell(r,i,h); c.font=WHT; c.fill=HDR; c.alignment=Alignment(horizontal='center')
+r+=1
+for nm,st,what in DG.DOCS:
+    dv.cell(r,2,nm).font=BLK; dv.cell(r,2).alignment=wr()
+    c=dv.cell(r,3,st); c.font=BOLD if st in ('READ','PARTIAL') else SM
+    c.alignment=Alignment(horizontal='center')
+    dv.cell(r,4,what).font=SM; dv.cell(r,4).alignment=wr()
+    dv.merge_cells(start_row=r,start_column=4,end_row=r,end_column=6)
+    for i in range(2,7): dv.cell(r,i).border=BOX
+    dv.row_dimensions[r].height=max(24,9.6*(len(what)//95+1))
+    r+=1
+
 wb.calculation.fullCalcOnLoad=True
-wb.save('165_Randolph_Detailed_Budget.xlsx')
+wb.save('165_Randolph_Capex_V2_Diligence_Reviewed.xlsx')
