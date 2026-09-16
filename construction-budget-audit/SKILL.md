@@ -38,3 +38,11 @@ Distinguish an **estimate-quality** problem from a **programme** problem. A cont
 ## Never
 
 Never treat a matching total as validation. Never report a raw cell error without its markup cascade. Never call scope "missing" without first checking whether it sits in another cost code. Never assume the larger of two area figures is the right denominator. Never accuse a contractor of padding when the scope came from the drawings they were given.
+
+## Two things the second pass at 165 Randolph taught
+
+**Read the contingency line's formula, not its label.** The 16 Sep revision carried a line reading `Soft Costs & FFE Contingency 10%` whose formula was `=(D23+D31+D47+D65)*0.1` — ten percent of the *entire project*, including a construction subtotal that already held its own 10% contractor contingency. As labelled it should have been $1,507,723; it was $8,098,599. A label and a formula disagreeing is worth more than any benchmark, and it will never show up in a subtotal check.
+
+**The convergence test is the finding.** Correct only the estimator's own arithmetic and basis errors — his rates, his quantities, his own backup rows — then re-run *his* formula chain rather than applying markups by hand. If his corrected total lands near an independently built bottom-up budget, the disagreement was never about how hard the building is to build, and you can say so. At 165 Randolph a $24.4M gap closed to 1.9% this way. That reframes the conversation from "you are too expensive" to "four cells are wrong", which is the one version a project manager can act on without losing face.
+
+Applying a hand-computed cascade to each correction instead would have double-counted: several corrections touch lines that also appear in the area-basis finding, and the contingency correction is itself part of the cascade. Fix the source cell, re-run the chain, and the arithmetic cannot lie to you.
