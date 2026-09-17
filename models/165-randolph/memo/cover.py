@@ -4,16 +4,16 @@ from docx import Document
 from docx.shared import Pt, RGBColor, Inches
 from docx.oxml.ns import qn
 E='—'; Q='’'
-TITLE='165 Randolph Ave — “The BLOCK”'
-HEAD=[('To','Thomas'),('cc','Nate (Wake)'),('From','Matthew Teper'),('Date','17 September 2026'),
-      ('Re',f'Questions and recommendations on the 16 September Master Development Budget')]
+TITLE='165 Randolph St — “The BLOCK”'
+HEAD=[('To','Thomas'),('cc','Nate (Wake) · Eric Cohen (EBC)'),('From','Matthew Teper'),('Date','17 September 2026'),
+      ('Re','Questions and recommendations on the 16 September Master Development Budget, for tomorrow')]
 PARAS=[
  "Thomas,",
- f"Thank you for the 16 September revision. The staffing chart behind general conditions, the newly priced electrical, plumbing and finishes, and the benchmark notes you left in the margins are a real step forward from the 4 September file, and we have leaned on all three.",
- f"Attached is one document in three parts. Page 1 is a single page of questions, keyed to your cells and line numbers so you can work through them in your own file. Page 2 is a single page of recommendations {E} what we think can come out, in the order it is worth doing, with who owns each. The pages behind those are the reasoning, for whoever wants it. You should not need them to answer the first two.",
- f"Two things up front. First, we got two things wrong in our earlier read {E} the roof-demolition line and the 135,953 SF basis {E} and we have withdrawn both. We would rather say that plainly than pretend otherwise. Second, the biggest question in the pack is structural rather than arithmetic. The RFEM tonnage prices a full rebuild. Our scheme keeps the existing roof and lifts it, with the stage, the production mezzanine and the VIP mezzanine standing on their own footings. We are not asking for a re-price; we are asking whether the lift is possible, starting with what the existing roof is made of. That one is for Nate and the structural engineer as much as for you.",
- f"If you can send back the five questions at the top of page 1, division 055100 priced off the takeoff, and your broker{Q}s quote on insurance both ways, we can close most of this within a week. We expect D26 to go up when it is priced. That is fine, and it will not be read as your number moving.",
- "Happy to walk through any of it whenever suits.",
+ "Thank you for the 16 September revision. The staffing chart behind general conditions, the newly priced electrical, plumbing and finishes, and the benchmark notes you left in the margins are a real step forward from the 4 September file, and we have leaned on all three.",
+ "Attached is one document in three parts for tomorrow. Page 1 is a single page of questions, keyed to your cells and line numbers so you can work through them in your own file. Page 2 is a single page of recommendations — what we think can come out, in the order it is worth doing, with who owns each. The pages behind those are the reasoning, for whoever wants it. You should not need them to answer the first two.",
+ "Eric has been through an earlier draft line by line and his answers are folded in, which has shortened the list. Three things worth saying up front. First, the roof is settled: it is precast, it is asbestos-positive, and the lift we had been asking about is off the table — we adopt the rebuild the structural model prices, and the ask is now simply to price 055100 off the takeoff. Second, we had two findings wrong — general conditions against division 013000, and the two lighting lines — and we have withdrawn both. Third, the biggest single item is still the contingency formula on D67, which is a formula change rather than a re-estimate.",
+ "If you can bring the D67 restatement, 055100 priced off the takeoff, the D26 lines you priced on the 16th, and your broker’s quote on insurance both ways, we can close most of this in the room. We expect D26 to go up when it is priced. That is fine, and it will not be read as your number moving.",
+ "See you tomorrow.",
  "Matthew",
 ]
 # ---- PDF via Chromium
